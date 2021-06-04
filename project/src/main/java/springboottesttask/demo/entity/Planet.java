@@ -3,6 +3,7 @@ package springboottesttask.demo.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "planet")
 public class Planet {
 
     @Id
