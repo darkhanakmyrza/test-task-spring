@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Lord</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>Create a Lord:</h1>
+
+
+<form th:action="@{/createPlanet}"
+      th:object="${planetForm}" method="POST">
+  Planet name:
+  <input type="text" th:field="*{name}" />
+  <br/>
+
+  <input type="submit" value="Create" />
+</form>
+
+<br/>
+
+<!-- Check if errorMessage is not null and not empty -->
+
+
+</body>
+</html>

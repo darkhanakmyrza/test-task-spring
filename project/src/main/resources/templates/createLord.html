@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Lord</title>
+</head>
+<body>
+<h1>Create a Lord:</h1>
+
+
+<form th:action="@{/createLord}"
+      th:object="${lordForm}" method="POST">
+  Lord Name:
+  <input type="text" th:field="*{lordName}" />
+  <br/>
+  Age:
+  <input type="number" th:field="*{age}" />
+  <br/>
+  <input type="submit" value="Create" />
+</form>
+
+<br/>
+
+<!-- Check if errorMessage is not null and not empty -->
+
+
+</body>
+</html>
